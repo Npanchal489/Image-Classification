@@ -10,7 +10,7 @@ model = tf.keras.models.load_model("best_model.keras")
 input_height, input_width = model.input_shape[1:3]
 
 # Define class names (update if your model uses different classes)
-class_names = ['Organic', "Recycable"]
+class_names = ['Organic', "Recyclable"]
 
 # Prediction function
 def predict_image(img: Image.Image):
